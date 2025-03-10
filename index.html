@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>touch-nums</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body onload="onInit()">
+    <h1>touch-nums</h1>
+    <h2>Click the numbers as fast as you can!</h2>
+
+    <button class="easy" onclick="setDifficulty(4)">Easy - 16</button>
+    <button class="medium" onclick="setDifficulty(5)">Medium - 25</button>
+    <button class="hard" onclick="setDifficulty(6)">Hard - 36</button>
+    <br />
+
+    <button class="restart" onclick="onRestart()">Restart</button>
+
+    <h2 class="timer">60.000</h2>
+
+    <table>
+      <tbody class="table"></tbody>
+    </table>
+
+    <script src="js/main.js"></script>
+    <script src="js/util.js"></script>
+  </body>
+</html>
